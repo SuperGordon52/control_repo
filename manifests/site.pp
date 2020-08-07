@@ -13,9 +13,9 @@ node 'master.puppet.vm' {
     owner => 'root',
   }
 }
-node /^web/ { 
+node 'web.puppet.vm' { 
   include role::app_server
 }
-node /^db/ {
+node 'db.puppet.vm' {
   include role::db_server
 }
